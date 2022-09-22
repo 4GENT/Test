@@ -1,4 +1,24 @@
-const Friends = () => {
+
+const TableRow = (props) => {
+  return (
+    <tr>
+      <th scope="row">{props.index + 1}</th>
+      <td>{props.name}</td>
+      <td>{props.surname}</td>
+    </tr>
+  );
+}
+
+
+
+const Friends = (props) => {
+  let users = props.function();
+  let userCount = Object.keys(users).length;
+  let userRow = [];
+  for (let i = 0; i < userCount; i++) {
+    userRow.push(<TableRow key={i} index={i} name={users[i].name} surname={users[i].surname} />);
+  }
+
 	return (
 		<table className="table table-striped">
 			<thead>
@@ -9,11 +29,7 @@ const Friends = () => {
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<th scope="row">1</th>
-					<td>Mark</td>
-					<td>Otto</td>
-				</tr>
+        {userRow}
 			</tbody>
 		</table>
 	);

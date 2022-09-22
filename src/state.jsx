@@ -9,12 +9,12 @@ const user = {
 };
 
 const users = {
-	0: { name: "Нина", lastname: "Яблочкова" },
-	1: { name: "Ипатий", lastname: "Вольпов" },
-	2: { name: "Федор", lastname: "Тютчев" },
-	3: { name: "Владислав", lastname: "Тетерин" },
-	4: { name: "Константин", lastname: "Петров" },
-	5: { name: "Евлампий", lastname: "Северский" },
+	0: { name: "Нина", surname: "Яблочкова" },
+	1: { name: "Ипатий", surname: "Вольпов" },
+	2: { name: "Федор", surname: "Тютчев" },
+	3: { name: "Владислав", surname: "Тетерин" },
+	4: { name: "Константин", surname: "Петров" },
+	5: { name: "Евлампий", surname: "Северский" },
 };
 
 
